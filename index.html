@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Kamila Azzahra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            }
+            .scroll-smooth {
+                scroll-behavior: smooth;
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1a1a1a',
+                        secondary: '#f0f0f0',
+                        accent: '#666666',
+                    },
+                    fontFamily: {
+                        montserrat: ['Montserrat', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-montserrat bg-white text-primary scroll-smooth">
+    <!-- NAVIGASI YANG DITAMBAHKAN -->
+    <nav class="fixed top-0 left-0 w-full bg-white/90 backdrop-blur-md z-50 shadow-md py-4 px-6">
+        <div class="container mx-auto flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm md:text-base font-semibold">
+            <a href="#beranda" class="hover:text-accent transition-colors">Beranda</a>
+            <a href="#tentang" class="hover:text-accent transition-colors">Tentang Saya</a>
+            <a href="#pendidikan" class="hover:text-accent transition-colors">Pendidikan</a>
+            <a href="#pengalaman" class="hover:text-accent transition-colors">Pengalaman</a>
+            <a href="#keahlian" class="hover:text-accent transition-colors">Keahlian & Proyek</a>
+            <a href="#sukarela" class="hover:text-accent transition-colors">Pengalaman Sukarela</a>
+            <a href="#kontak" class="hover:text-accent transition-colors">Kontak</a>
+        </div>
+    </nav>
+    <!-- AKHIR NAVIGASI -->
+
+    <div class="pt-16"> <!-- Ruang untuk navigasi tetap -->
+
+        <!-- Halaman 1: Header Utama -->
+        <section id="beranda" class="min-h-screen flex flex-col items-center justify-center py-16 px-4 border-b border-gray-200">
+            <div class="w-full max-w-4xl mx-auto text-center">
+                <div class="flex justify-center mb-8">
+                    <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_0_1200.jpg~tplv-0es2k971ck-resize-crop:390:59:796:276:406:217.jpeg?rk3s=1567c5c4&x-expires=1810999019&x-signature=e3AoSiUn5YxPYYhJUW1jkizsbU8%3D" 
+                         alt="Foto Profil Kamila Azzahra" 
+                         class="w-64 h-64 object-cover rounded-full shadow-lg">
+                </div>
+                <h1 class="text-[clamp(3rem,8vw,5rem)] font-black text-primary text-shadow mb-4">Kamila Azzahra</h1>
+                <p class="text-xl text-accent mb-12">Portofolio Profesional | 2026</p>
+                <div class="mt-8">
+                    <p class="text-lg">Kamilaraish@gmail.com</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman 2: Tentang Saya & Pendidikan -->
+        <section id="tentang" class="min-h-screen py-16 px-6 bg-gray-50">
+            <div class="container mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-4xl font-bold mb-6 border-b-2 border-primary pb-2">About Me</h2>
+                    <p class="text-lg leading-relaxed text-justify">
+                        Motivated individual with a strong interest in digital business and marketing. Skilled in communication and persuasive engagement, with experience utilizing digital platforms and tools to support marketing and sales strategies. Passionate about creating creative ideas that increase audience engagement, while bringing a collaborative mindset, positive energy, and adaptability to contribute actively to business growth.
+                    </p>
+                    
+                    <div class="mt-10">
+                        <h3 class="text-2xl font-semibold mb-3">Kontak & Lokasi</h3>
+                        <p class="mb-1">(+62) 895 6024 50516</p>
+                        <p class="mb-1">Kamilaraish@gmail.com</p>
+                        <p>South Jakarta, Indonesia.</p>
+                        <p class="mt-2 text-sm text-accent">(Starting August 2026)</p>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2 bg-white p-8 rounded-lg shadow-md" id="pendidikan">
+                    <h2 class="text-4xl font-bold mb-6 border-b-2 border-primary pb-2">Education</h2>
+                    
+                    <div class="mb-6">
+                        <h3 class="text-xl font-semibold">Universitas Negeri Jakarta</h3>
+                        <p class="text-accent">D4 - Public Relation and Digital Communication</p>
+                        <p class="text-accent text-sm">Faculty of Social Sciences and Law</p>
+                        <p class="text-sm mt-1">Major in Business and Marketing - Expertise in Digital Business</p>
+                        <p class="text-right text-sm font-medium">(2023 – 2026)</p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-semibold">SMKN 41 Jakarta</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman 3: Pengalaman Kerja -->
+        <section id="pengalaman" class="py-16 px-6">
+            <div class="container mx-auto max-w-6xl">
+                <h2 class="text-[clamp(2.5rem,6vw,5rem)] font-black text-center mb-16">Experience</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <!-- Kolom Kiri -->
+                    <div class="space-y-12">
+                        <div class="p-6 border-l-4 border-primary">
+                            <h3 class="text-2xl font-bold">PT. Mega Cerdas</h3>
+                            <p class="font-medium text-accent">Online Division Intern</p>
+                            <p class="text-sm text-right mb-3">04.2025 - 09.2025</p>
+                            <p>Handled digital content management, marketplace operations, live shopping sessions, customer service, and supported promotional activities and company events.</p>
+                        </div>
+
+                        <div class="p-6 border-l-4 border-primary">
+                            <h3 class="text-2xl font-bold">Aphrory (Student Based Company)</h3>
+                            <p class="font-medium text-accent">Project Leader</p>
+                            <p class="text-sm text-right mb-3">08.2023 - 01.2025</p>
+                            <p>Focused on digital content creation, live shopping activities, and product promotion as a brand reseller.</p>
+                        </div>
+                    </div>
+
+                    <!-- Kolom Kanan -->
+                    <div class="space-y-12">
+                        <div class="p-6 border-l-4 border-primary">
+                            <h3 class="text-2xl font-bold">Blue String Studio</h3>
+                            <p class="font-medium text-accent">Freelancer</p>
+                            <p class="text-sm text-right mb-3">01.2026 - 04.2026</p>
+                            <p>Managed marketplace operations and regularly updated product stock to ensure smooth sales activities.</p>
+                        </div>
+
+                        <div class="p-6 border-l-4 border-primary">
+                            <h3 class="text-2xl font-bold">VOCA Media</h3>
+                            <p class="font-medium text-accent">Online Sales Staff</p>
+                            <p class="text-sm text-right mb-3">08.2023 - 01.2025</p>
+                            <p>Managed live streaming and marketplace operations to support customer engagement and optimize sales performance.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman 4 - 7: Keahlian & Proyek Utama -->
+        <section id="keahlian" class="bg-gray-50 py-16 px-6">
+            <div class="container mx-auto max-w-5xl space-y-20">
+
+                <!-- Bagian Planning Execution -->
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Planning Execution</h3>
+                        <p class="text-lg leading-relaxed">
+                            Planned, executed, and managed digital content strategies across social media platforms to increase engagement and brand awareness. Successfully producing up to 14 ready-to-upload contents per week tailored to audience needs and scheduling.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_3_1200.jpg~tplv-0es2k971ck-resize-crop:958:251:1133:500:175:249.jpeg?rk3s=1567c5c4&x-expires=1810999020&x-signature=YVke7X6v1DfIou96%2FLcXc2En5lY%3D" 
+                             alt="Ilustrasi Perencanaan Konten" 
+                             class="w-full h-auto rounded shadow-md">
+                    </div>
+                </div>
+
+                <!-- Bagian Analysis -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Analysis</h3>
+                        <p class="text-lg leading-relaxed">
+                            Analyzed social media and marketplace performance to identify areas for improvement, optimize strategies, and increase engagement and sales effectiveness.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                        <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_4_1200.jpg~tplv-0es2k971ck-resize-crop:635:48:1171:332:536:284.jpeg?rk3s=1567c5c4&x-expires=1810999020&x-signature=xcd03pfUGIC1O78xlhDJXoEZQaY%3D" alt="Marketplace Ads Reach" class="w-full h-auto rounded">
+                        <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_4_1200.jpg~tplv-0es2k971ck-resize-crop:697:351:1143:658:446:307.jpeg?rk3s=1567c5c4&x-expires=1810999020&x-signature=YU29XAAGrbCFh1Ti%2BXekes%2Fnn%2B8%3D" alt="Social Media Performance" class="w-full h-auto rounded">
+                    </div>
+                </div>
+
+                <!-- Bagian Stock Sales -->
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Stock Sales</h3>
+                        <p class="text-lg leading-relaxed">
+                            Managed stock and sales processing, including client-based pre-orders, mass product uploads across marketplaces, and handling order coordination through email. Including manual uploads of up to 50 products per day and mass uploads reaching 150+ products per week across marketplace platforms.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://p16-flow-sign-sg.ibyteimg.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_5_1200.jpg~tplv-0es2k971ck-resize-crop:739:349:1140:608:401:259.jpeg?rk3s=1567c5c4&x-expires=1810999020&x-signature=nWdmKON2aQAhSRyIGayXNbSCBb4%3D" alt="Mass Upload Ilustrasi" class="w-full h-auto rounded shadow-md">
+                    </div>
+                </div>
+
+                <!-- Bagian Admin -->
+                <div class="flex flex-col md:flex-row-reverse items-center gap-10">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Admin</h3>
+                        <p class="text-lg leading-relaxed">
+                            Managed marketplace operations by handling customer inquiries, responding to chats, and maintaining store performance to ensure optimal marketplace operations. Maintaining customer inquiries and chat responses within under 10 minutes to ensure efficient customer service.
+                        </p>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_6_1200.jpg~tplv-0es2k971ck-resize-crop:737:46:1148:490:411:444.jpeg?rk3s=1567c5c4&x-expires=1810999019&x-signature=sMkzHPVKyl1%2Bbat41HaABLDWf3s%3D" alt="Ilustrasi Admin" class="w-full h-auto rounded shadow-md">
+                    </div>
+                </div>
+
+                <!-- Bagian Live Selling -->
+                <div class="flex flex-col md:flex-row items-center gap-10">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold mb-4">Live Selling</h3>
+                        <p class="text-lg leading-relaxed">
+                            Hosted live selling sessions by interacting with customers in real time,
+                <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Raisha Kamila Azzahra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .section-padding {
+                @apply py-16 px-4 md:px-8 lg:px-16;
+            }
+            .bg-pattern {
+                background-color: #ffffff;
+                background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f3f4f6' fill-opacity='0.5'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            }
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC7',
+                        dark: '#1D2129',
+                        light: '#F2F3F5',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-pattern text-dark">
+    <!-- Navigasi -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-[clamp(1.2rem,3vw,1.8rem)] font-bold text-primary text-shadow mb-3 md:mb-0">Raisha Kamila</h1>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8">
+                <a href="#admin" class="font-medium hover:text-primary transition-colors">Admin</a>
+                <a href="#live-selling" class="font-medium hover:text-primary transition-colors">Live Selling</a>
+                <a href="#microsite" class="font-medium hover:text-primary transition-colors">Microsite</a>
+                <a href="#design" class="font-medium hover:text-primary transition-colors">Desain Grafis</a>
+                <a href="#volunteer" class="font-medium hover:text-primary transition-colors">Sukarelawan</a>
+                <a href="#contact" class="font-medium hover:text-primary transition-colors">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-20">
+        <!-- Halaman 6: Admin -->
+        <section id="admin" class="section-padding bg-white">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-[clamp(2rem,5vw,4rem)] font-black text-primary mb-4">Admin</h2>
+                    <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div class="order-2 lg:order-1">
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
+                            Mengelola operasi pasar daring dengan menangani pertanyaan pelanggan, menanggapi pesan obrolan, dan menjaga kinerja toko untuk memastikan operasi pasar berjalan optimal.
+                        </p>
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-700">
+                            Berhasil menjaga pertanyaan pelanggan dan menanggapi pesan obrolan dalam waktu kurang dari 10 menit untuk memastikan layanan pelanggan yang efisien.
+                        </p>
+                        
+                        <div class="mt-8 flex items-center gap-3">
+                            <i class="fa fa-tiktok text-2xl text-primary"></i>
+                            <span class="font-medium">Platform yang digunakan: TikTok & Pasar Daring Lainnya</span>
+                        </div>
+                        
+                        <div class="mt-6 bg-light p-4 rounded-lg border-l-4 border-primary">
+                            <p class="font-semibold">Keahlian Utama:</p>
+                            <ul class="list-disc list-inside mt-2 space-y-1 text-gray-700">
+                                <li>Pelayanan pelanggan cepat dan responsif</li>
+                                <li>Pengelolaan operasional toko daring</li>
+                                <li>Pemeliharaan kinerja dan reputasi toko</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="order-1 lg:order-2 rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
+                        <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_6_1200.jpg~tplv-0es2k971ck-resize-crop:737:46:1148:490:411:444.jpeg" 
+                             alt="Ilustrasi Pengelolaan Admin" 
+                             class="w-full h-auto object-cover"
+                             loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman 7: Live Selling -->
+        <section id="live-selling" class="section-padding bg-gradient-to-br from-light to-white">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-[clamp(1.8rem,4vw,3.5rem)] font-black text-primary mb-4">Live Selling</h2>
+                    <p class="text-gray-600 italic">Penyaji dan Penjual Langsung</p>
+                    <div class="w-24 h-1 bg-secondary mx-auto rounded-full mt-2"></div>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                    <div class="rounded-xl shadow-xl overflow-hidden transform hover:scale-[1.02] transition-transform duration-300">
+                        <img src="https://p16-flow-sign-sg.ibyteimg.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_7_1200.jpg~tplv-0es2k971ck-resize-crop:526:0:1200:674:674:674.jpeg" 
+                             alt="Aktivitas Live Selling" 
+                             class="w-full h-auto object-cover"
+                             loading="lazy">
+                    </div>
+                    
+                    <div>
+                        <p class="text-lg md:text-xl leading-relaxed text-gray-700 mb-6">
+                            Menjadi pembawa acara sesi penjualan langsung dengan berinteraksi dengan pelanggan secara waktu nyata, menjelaskan rincian produk dengan jelas, menjawab pertanyaan secara langsung, dan menyampaikan komunikasi yang persuasif untuk meningkatkan minat pelanggan dan penjualan.
+                        </p>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+                            <p class="font-semibold text-primary mb-2">Kapasitas Kerja:</p>
+                            <p class="text-gray-700">Durasi setiap sesi: hingga 2 jam</p>
+                            <p class="text-gray-700">Platform utama: TikTok Live</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-4 mt-6">
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                                <i class="fa fa-comments text-2xl text-secondary mb-2"></i>
+                                <p class="font-medium">Interaksi Langsung</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                                <i class="fa fa-microphone text-2xl text-secondary mb-2"></i>
+                                <p class="font-medium">Komunikasi Persuasif</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                                <i class="fa fa-shopping-cart text-2xl text-secondary mb-2"></i>
+                                <p class="font-medium">Peningkatan Penjualan</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
+                                <i class="fa fa-clock-o text-2xl text-secondary mb-2"></i>
+                                <p class="font-medium">Manajemen Waktu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Halaman 8: Microsite -->
+        <section id="microsite" class="section-padding bg-white">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold text-primary mb-4">Microsite yang Saya Buat</h2>
+                    <div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+                </div>
+                
+                <div class="max-w-3xl mx-auto">
+                    <div class="rounded-xl shadow-xl overflow-hidden mb-8">
+                        <img src="https://p16-flow-sign-sg.ibyteimg.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_8_1200.jpg~tplv-0es2k971ck-resize-crop:125:189:827:618:702:429.jpeg" 
+                             alt="Tampilan Microsite Aphrora" 
+                             class="w-full h-auto object-cover"
+                             loading="lazy">
+                    </div>
+                    
+                    <div class="bg-light p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-3 text-center">Proyek: Aphrora Company Profile</h3>
+                        <p class="text-gray-700 mb-4 text-center">
+                            Situs mikro yang berisi profil perusahaan, informasi produk, galeri produk, serta visi dan misi perusahaan. Dibuat untuk memudahkan pelanggan mengenal bisnis dan produk yang ditawarkan.
+                        </p>
+                        
+                        <div class="text-center mt-4">
+                            <a href="#" class="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition-colors shadow-md hover:shadow-lg">
+                                <i class="fa fa-external-link mr-2"></i> Klik di sini untuk mengakses situs
+                            </a>
+                        </div>
+                        
+                        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                            <div>
+                                <p class="font-bold text-primary">Fitur Utama:</p>
+                                <p class="text-gray-700">Profil Perusahaan</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-primary">Konten:</p>
+                                <p class="text-gray-700">Info Produk & Galeri</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-primary">Tujuan:</p>
+                                <p class="text-gray-700">Branding Bisnis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Kamila Azzahra - Karya & Pengalaman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#6B46C1',
+                        secondary: '#9F7AEA',
+                        dark: '#2D3748',
+                        light: '#F7FAFC',
+                        accent: '#ED8936',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:scale-105 hover:shadow-xl;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-light text-dark overflow-x-hidden">
+    <!-- Navigasi -->
+    <nav class="bg-primary text-white py-4 px-6 md:px-12 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-shadow">Kamila Azzahra</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#desain" class="hover:text-secondary transition-colors">Desain Grafis</a>
+                <a href="#sukarela" class="hover:text-secondary transition-colors">Pengalaman Sukarela</a>
+                <a href="#kontak" class="hover:text-secondary transition-colors">Kontak</a>
+            </div>
+            <button class="md:hidden text-white text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Bagian Desain Grafis - Halaman 9 -->
+    <section id="desain" class="py-16 px-6 md:px-12 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-primary text-shadow">Desain Grafis</h2>
+                <p class="text-lg text-gray-600 mt-4">Berikut adalah kumpulan karya desain grafis yang telah saya buat untuk keperluan media sosial dan promosi</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8">
+                <!-- Karya 1 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://p16-flow-sign-sg.ibyteimg.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_9_1200.jpg~tplv-0es2k971ck-resize-crop:49:286:219:626:170:340.jpeg?rk3s=1567c5c4&x-expires=1810999019&x-signature=CdjXYv13WjGf1UImtj3PkttaKxw%3D" 
+                         alt="Desain Grafis 1" class="w-full h-[400px] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Konten Pendidikan Sejarah</h3>
+                        <p class="text-gray-600 text-sm">Desain postingan tentang topik sejarah untuk media sosial</p>
+                    </div>
+                </div>
+
+                <!-- Karya 2 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://p16-flow-sign-sg.ibyteimg.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_9_1200.jpg~tplv-0es2k971ck-resize-crop:279:224:446:563:167:339.jpeg?rk3s=1567c5c4&x-expires=1810999019&x-signature=7fGnAWYqcTzMP4dsfOMEg5hMipo%3D" 
+                         alt="Desain Grafis 2" class="w-full h-[400px] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Postingan Edukasi</h3>
+                        <p class="text-gray-600 text-sm">Konten informasi dengan tata letak yang jelas dan menarik</p>
+                    </div>
+                </div>
+
+                <!-- Karya 3 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://p16-flow-sign-sg.ibyteimg.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_9_1200.jpg~tplv-0es2k971ck-resize-crop:493:284:664:626:171:342.jpeg?rk3s=1567c5c4&x-expires=1810999019&x-signature=SYa4kF62C1rCns9wehEFNAERImk%3D" 
+                         alt="Desain Grafis 3" class="w-full h-[400px] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Kampanye Promosi</h3>
+                        <p class="text-gray-600 text-sm">Desain untuk kampanye "40 Hari Ikhtiar Jalur Langit" - Azzahra Official</p>
+                    </div>
+                </div>
+
+                <!-- Karya 4 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_9_1200.jpg~tplv-0es2k971ck-resize-crop:711:267:879:607:168:340.jpeg?rk3s=1567c5c4&x-expires=1810999019&x-signature=CKYK46rIUr3gFp2BIE3eYZkw1ps%3D" 
+                         alt="Desain Grafis 4" class="w-full h-[400px] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Promosi Belanja</h3>
+                        <p class="text-gray-600 text-sm">Desain konten "Today's Groceries" dengan penawaran diskon</p>
+                    </div>
+                </div>
+
+                <!-- Karya 5 -->
+                <div class="bg-gray-50 rounded-lg shadow-md overflow-hidden card-hover">
+                    <img src="https://p16-flow-sign-sg.ciciai.com/ocean-cloud-tos-sg/pdf/6645e4702c03f084e0569d5cfa6c33a2_9_1200.jpg~tplv-0es2k971ck-resize-crop:940:205:1110:545:170:340.jpeg?rk3s=1567c5c4&x-expires=1810999019&x-signature=QCprsRQnxBHS7f82y2VT5yyM9Yg%3D" 
+                         alt="Desain Grafis 5" class="w-full h-[400px] object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Iklan Diskon</h3>
+                        <p class="text-gray-600 text-sm">Promosi diskon 20% dengan ajakan ke tautan di bio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pengalaman Sukarela - Halaman 10 -->
+    <section id="sukarela" class="py-16 px-6 md:px-12 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-[clamp(2rem,4vw,3.5rem)] font-bold text-primary text-shadow">Pengalaman Sukarela</h2>
+                <p class="text-lg text-gray-600 mt-4">Kegiatan sosial dan kontribusi yang telah saya ikuti untuk membantu masyarakat</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <!-- Pengalaman 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover border-t-4 border-accent">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-accent text-white px-3 py-1 rounded-full text-sm font-bold">2023</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Berbagi & Peduli</h3>
+                    <p class="text-gray-600 mb-4">RPTRA Pondok Labu</p>
+                    <p class="text-gray-700">Berpartisipasi dalam kegiatan berbagi kebutuhan pokok dan berinteraksi dengan warga sekitar untuk meningkatkan kepedulian sosial.</p>
+                </div>
+
+                <!-- Pengalaman 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover border-t-4 border-primary">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-primary text-white px-3 py-1 rounded-full text-sm font-bold">2025</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Staf Stan Acara</h3>
+                    <p class="text-gray-600 mb-4">Islamic Bookfair JCC GBK</p>
+                    <p class="text-gray-700">Membantu pengelolaan stan pameran, melayani pengunjung, dan mempromosikan produk buku serta materi pendidikan Islam selama acara berlangsung.</p>
+                </div>
+
+                <!-- Pengalaman 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-8 card-hover border-t-4 border-secondary">
+                    <div class="flex items-center mb-4">
+                        <span class="bg-secondary text-white px-3 py-1 rounded-full text-sm font-bold">2026</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Acara Amal</h3>
+                    <p class="text-gray-600 mb-4">Yayasan Amanah Mulia Yatim</p>
+                    <p class="text-gray-700">Mengorganisir dan berpartisipasi dalam acara penggalangan dana dan pemberian bantuan untuk anak-anak yatim, serta kegiatan pengembangan diri mereka.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Penutup & Kontak - Halaman 11-12 -->
+    <section id="kontak" class="py-20 px-6 md:px-12 bg-gradient-to-r from-primary to-secondary text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-[clamp(2.5rem,6vw,5rem)] font-bold mb-6 text-shadow">Mari Bekerja Sama!</h2>
+            <p class="text-xl md:text-2xl mb-10 max-w-2xl mx-auto opacity-90">Siap untuk berkolaborasi dalam proyek pemasaran digital, pembuatan konten, atau desain grafis. Mari wujudkan ide hebat bersama!</p>
+            
+            <div class="bg-white/20 backdrop-blur-md rounded-xl p-8 max-w-xl mx-auto mb-12">
+                <h3 class="text-2xl font-semibold mb-6">Informasi Kontak</h3>
+                <div class="space-y-4 text-lg">
+                    <div class="flex items-center justify-center gap-3">
+                        <i class="fa fa-phone"></i>
+                        <span>(+62) 895 6024 50516</span>
+                    </div>
+                    <div class="flex items-center justify-center gap-3">
+                        <i class="fa fa-envelope"></i>
+                        <span>Kamilaraish@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="mailto:Kamilaraish@gmail.com" class="bg-accent hover:bg-accent/90 text-white font-bold py-3 px-8 rounded-full text-lg transition-all transform hover:-translate-y-1 hover:shadow-lg">
+                Hubungi Saya
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8 px-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2026 Kamila Azzahra - Portofolio Pribadi | Semua Hak Dilindungi</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-secondary transition-colors"><i class="fa fa-instagram text-xl"></i></a>
+                <a href="#" class="hover:text-secondary transition-colors"><i class="fa fa-tiktok text-xl"></i></a>
+                <a href="#" class="hover:text-secondary transition-colors"><i class="fa fa-linkedin text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+    
